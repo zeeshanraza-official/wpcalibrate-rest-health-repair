@@ -1,0 +1,19 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts & archives
+*.zip
+*.tar.gz
+*.log
+
+# Caches & temporary files
+.tmp/
+.cache/

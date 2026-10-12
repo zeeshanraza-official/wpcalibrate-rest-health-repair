@@ -1,0 +1,29 @@
+/**
+ * WPCalibrate REST Health & Repair - Admin RTL Stylesheet
+ */
+
+.wpcalibrate-rhr-wrap {
+	margin: 20px 2px 0 20px;
+}
+
+.wpcalibrate-rhr-test-card {
+	border-left: 1px solid var(--wpcalibrate-card-border);
+	border-right: 5px solid var(--wpcalibrate-na);
+}
+
+.wpcalibrate-rhr-test-card.status-healthy {
+	border-right-color: var(--wpcalibrate-healthy);
+}
+
+.wpcalibrate-rhr-test-card.status-warning {
+	border-right-color: var(--wpcalibrate-warning);
+}
+
+.wpcalibrate-rhr-test-card.status-failed {
+	border-right-color: var(--wpcalibrate-failed);
+}
+
+.diag-causes-box ul,
+.repair-plan-details ul {
+	margin: 6px 18px 0 0;
+}

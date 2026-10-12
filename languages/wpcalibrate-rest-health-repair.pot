@@ -1,0 +1,105 @@
+# Copyright (C) 2026 WPCalibrate
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCalibrate REST Health & Repair 1.0.0\n"
+"Report-Msgid-Bugs-To: support@wpcalibrate.com\n"
+"Last-Translator: WPCalibrate <support@wpcalibrate.com>\n"
+"Language-Team: English <support@wpcalibrate.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-12T13:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WPCalibrate Translation Engine\n"
+"X-Domain: wpcalibrate-rest-health-repair\n"
+
+msgid "REST Health & Repair"
+msgstr ""
+
+msgid "Run Full Diagnostic"
+msgstr ""
+
+msgid "WordPress REST API Core Registration"
+msgstr ""
+
+msgid "REST Root URL Generation"
+msgstr ""
+
+msgid "REST Root Index Accessibility"
+msgstr ""
+
+msgid "Core Public REST Endpoint (/wp/v2/types)"
+msgstr ""
+
+msgid "REST JSON Format & Output Sanity"
+msgstr ""
+
+msgid "Application Passwords Support"
+msgstr ""
+
+msgid "Server Loopback & Self-Request Connectivity"
+msgstr ""
+
+msgid "SSL Certificate & HTTPS Verification"
+msgstr ""
+
+msgid "Site URL vs Home URL Consistency"
+msgstr ""
+
+msgid "REST Redirect Chains & Cross-Domain Redirects"
+msgstr ""
+
+msgid "REST Error Status Code & JSON Handling"
+msgstr ""
+
+msgid "WordPress Permalink Structure"
+msgstr ""
+
+msgid "WordPress REST API Rewrite Rules"
+msgstr ""
+
+msgid "REST Fallback Query Parameter (?rest_route=/)"
+msgstr ""
+
+msgid "Web Server Rewrite Configuration (.htaccess / Nginx)"
+msgstr ""
+
+msgid "REST Authentication Hook Interference (rest_authentication_errors)"
+msgstr ""
+
+msgid "Active Security & REST Restriction Plugins Analysis"
+msgstr ""
+
+msgid "WAF, CDN & Security Challenge Detection"
+msgstr ""
+
+msgid "HTTP Basic Authentication & Password Protection"
+msgstr ""
+
+msgid "WooCommerce Installation & HPOS Status"
+msgstr ""
+
+msgid "WooCommerce REST & Store API Namespaces Registration"
+msgstr ""
+
+msgid "WooCommerce Store API Public Connectivity (/wc/store/v1/products)"
+msgstr ""
+
+msgid "WooCommerce Cart & Checkout Blocks Store API Dependency"
+msgstr ""
+
+msgid "\"Your Store Is Not Driven by WordPress\" Root Cause Analysis"
+msgstr ""
+
+msgid "Flush WordPress Rewrite Rules"
+msgstr ""
+
+msgid "Regenerate WordPress .htaccess Directives"
+msgstr ""
+
+msgid "Clear Diagnostic Results Cache"
+msgstr ""
+
+msgid "Repair Scheduled Tasks"
+msgstr ""

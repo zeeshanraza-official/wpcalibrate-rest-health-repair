@@ -1,0 +1,479 @@
+/**
+ * WPCalibrate REST Health & Repair - Admin Stylesheet
+ * WCAG 2.2 AA compliant, accessible focus indicators, responsive.
+ */
+
+:root {
+	--wpcalibrate-primary: #0073aa;
+	--wpcalibrate-primary-hover: #005177;
+	--wpcalibrate-healthy: #008a20;
+	--wpcalibrate-healthy-bg: #edfaef;
+	--wpcalibrate-warning: #dba617;
+	--wpcalibrate-warning-bg: #fcf9e8;
+	--wpcalibrate-failed: #d63638;
+	--wpcalibrate-failed-bg: #fcf0f1;
+	--wpcalibrate-na: #646970;
+	--wpcalibrate-na-bg: #f0f0f1;
+	--wpcalibrate-card-border: #c3c4c7;
+	--wpcalibrate-card-bg: #ffffff;
+	--wpcalibrate-text-main: #2c3338;
+	--wpcalibrate-text-muted: #50575e;
+}
+
+.wpcalibrate-rhr-wrap {
+	max-width: 1200px;
+	margin: 20px 20px 0 2px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: var(--wpcalibrate-text-main);
+}
+
+/* Header */
+.wpcalibrate-rhr-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 20px;
+	background: var(--wpcalibrate-card-bg);
+	border: 1px solid var(--wpcalibrate-card-border);
+	border-radius: 6px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.wpcalibrate-rhr-branding {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.wpcalibrate-rhr-logo {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+.wpcalibrate-rhr-title-group h1 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: var(--wpcalibrate-text-main);
+}
+
+.wpcalibrate-rhr-version-tag {
+	font-size: 11px;
+	font-weight: 600;
+	background: #f0f0f1;
+	color: var(--wpcalibrate-text-muted);
+	padding: 2px 6px;
+	border-radius: 4px;
+	margin-top: 2px;
+	display: inline-block;
+}
+
+/* Nav Tabs */
+.wpcalibrate-rhr-nav-tabs {
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--wpcalibrate-card-border);
+}
+
+.wpcalibrate-rhr-nav-tabs .nav-tab {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 500;
+	padding: 8px 14px;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+
+.wpcalibrate-rhr-nav-tabs .nav-tab:focus-visible {
+	outline: 2px solid var(--wpcalibrate-primary);
+	outline-offset: -2px;
+}
+
+.wpcalibrate-rhr-nav-tabs .nav-tab .dashicons {
+	font-size: 17px;
+	width: 17px;
+	height: 17px;
+}
+
+/* Cards */
+.wpcalibrate-rhr-card {
+	background: var(--wpcalibrate-card-bg);
+	border: 1px solid var(--wpcalibrate-card-border);
+	border-radius: 6px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.wpcalibrate-rhr-card h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+/* Overview Grid */
+.wpcalibrate-rhr-overview-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+@media (max-width: 960px) {
+	.wpcalibrate-rhr-overview-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Badges Row */
+.wpcalibrate-rhr-badges-row {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin: 20px 0;
+}
+
+.wpcalibrate-rhr-metric-badge {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 10px;
+	border-radius: 6px;
+	border: 1px solid transparent;
+	text-align: center;
+}
+
+.wpcalibrate-rhr-metric-badge .metric-count {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.wpcalibrate-rhr-metric-badge .metric-label {
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.badge-healthy {
+	background: var(--wpcalibrate-healthy-bg);
+	border-color: #b7e1cd;
+	color: var(--wpcalibrate-healthy);
+}
+
+.badge-warning {
+	background: var(--wpcalibrate-warning-bg);
+	border-color: #fce8b2;
+	color: #9a6800;
+}
+
+.badge-failed {
+	background: var(--wpcalibrate-failed-bg);
+	border-color: #f4c7c3;
+	color: var(--wpcalibrate-failed);
+}
+
+.badge-na {
+	background: var(--wpcalibrate-na-bg);
+	border-color: #dcdcde;
+	color: var(--wpcalibrate-na);
+}
+
+.wpcalibrate-rhr-action-bar {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+/* Status Pills */
+.status-pill {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.pill-healthy {
+	background: var(--wpcalibrate-healthy-bg);
+	color: var(--wpcalibrate-healthy);
+}
+
+.pill-warning {
+	background: var(--wpcalibrate-warning-bg);
+	color: #9a6800;
+}
+
+.pill-failed {
+	background: var(--wpcalibrate-failed-bg);
+	color: var(--wpcalibrate-failed);
+}
+
+.pill-na {
+	background: var(--wpcalibrate-na-bg);
+	color: var(--wpcalibrate-na);
+}
+
+/* Diagnostic Test Cards */
+.wpcalibrate-rhr-results-accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.wpcalibrate-rhr-test-card {
+	background: var(--wpcalibrate-card-bg);
+	border: 1px solid var(--wpcalibrate-card-border);
+	border-left: 5px solid var(--wpcalibrate-na);
+	border-radius: 4px;
+	padding: 16px 18px;
+	transition: box-shadow 0.15s ease;
+}
+
+.wpcalibrate-rhr-test-card.status-healthy {
+	border-left-color: var(--wpcalibrate-healthy);
+}
+
+.wpcalibrate-rhr-test-card.status-warning {
+	border-left-color: var(--wpcalibrate-warning);
+}
+
+.wpcalibrate-rhr-test-card.status-failed {
+	border-left-color: var(--wpcalibrate-failed);
+}
+
+.wpcalibrate-rhr-test-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.test-title-col {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.status-indicator-icon {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.status-healthy .status-indicator-icon {
+	color: var(--wpcalibrate-healthy);
+}
+
+.status-warning .status-indicator-icon {
+	color: var(--wpcalibrate-warning);
+}
+
+.status-failed .status-indicator-icon {
+	color: var(--wpcalibrate-failed);
+}
+
+.status-badge {
+	font-size: 10px;
+	font-weight: 700;
+	padding: 2px 6px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.status-badge.status-healthy {
+	background: var(--wpcalibrate-healthy-bg);
+	color: var(--wpcalibrate-healthy);
+}
+
+.status-badge.status-warning {
+	background: var(--wpcalibrate-warning-bg);
+	color: #9a6800;
+}
+
+.status-badge.status-failed {
+	background: var(--wpcalibrate-failed-bg);
+	color: var(--wpcalibrate-failed);
+}
+
+.status-badge.status-na,
+.status-badge.status-skipped {
+	background: var(--wpcalibrate-na-bg);
+	color: var(--wpcalibrate-na);
+}
+
+.diag-message {
+	font-size: 13.5px;
+	margin: 6px 0 10px 0;
+	line-height: 1.5;
+}
+
+.diag-causes-box {
+	background: #fdfaf2;
+	border: 1px solid #f9edd0;
+	border-radius: 4px;
+	padding: 10px 14px;
+	margin: 10px 0;
+	font-size: 13px;
+}
+
+.diag-causes-box ul {
+	margin: 6px 0 0 18px;
+}
+
+.diag-impact,
+.diag-rec-action {
+	font-size: 13px;
+	margin: 6px 0;
+}
+
+.diag-manual-guide {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 10px 14px;
+	margin: 10px 0;
+}
+
+.diag-manual-guide pre {
+	margin: 6px 0 0 0;
+	font-size: 12px;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.diag-repair-row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 12px;
+	padding-top: 10px;
+	border-top: 1px dashed var(--wpcalibrate-card-border);
+}
+
+.diag-evidence-details {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.diag-evidence-details summary {
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--wpcalibrate-primary);
+}
+
+.diag-evidence-details pre {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 10px;
+	overflow-x: auto;
+	font-size: 11.5px;
+	margin-top: 6px;
+}
+
+/* Repairs Tab */
+.wpcalibrate-rhr-repair-card {
+	border: 1px solid var(--wpcalibrate-card-border);
+	border-radius: 6px;
+	padding: 16px;
+	margin-bottom: 14px;
+	background: #fafafa;
+}
+
+.repair-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.repair-title-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.repair-title-group h3 {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.risk-badge {
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 7px;
+	border-radius: 10px;
+}
+
+.risk-low {
+	background: #e6f6e8;
+	color: #007a1b;
+}
+
+.risk-moderate {
+	background: #fef7e0;
+	color: #936000;
+}
+
+.risk-manual {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.repair-plan-details {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.repair-plan-details summary {
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.repair-plan-details ul {
+	margin: 6px 0 0 18px;
+}
+
+/* FAQ */
+.wpcalibrate-rhr-faq-accordion details {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 10px 14px;
+	margin-bottom: 10px;
+}
+
+.wpcalibrate-rhr-faq-accordion summary {
+	cursor: pointer;
+}
+
+.wpcalibrate-rhr-faq-accordion p {
+	margin: 8px 0 0 0;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+/* Button & Focus Accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+	outline: 2px solid var(--wpcalibrate-primary);
+	outline-offset: 2px;
+}
+
+.is-busy {
+	opacity: 0.6;
+	pointer-events: none;
+	position: relative;
+}
